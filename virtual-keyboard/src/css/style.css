@@ -1,0 +1,194 @@
+* {
+  user-select: none;
+  outline: none;
+}
+
+html[theme="dark-mode"] {
+  /* ! */
+  filter: invert(100%) hue-rotate(180deg);
+}
+
+body {
+  background-color: white;
+}
+
+.container {
+  width: 1050px;
+  margin: auto;
+}
+
+.keyboard {
+  background-color: gray;
+  color: gray;
+  width: 1050px;
+  border-radius: 4px;
+}
+
+.row {
+  /* ! */
+  display: flex;
+}
+
+.key {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  /* ! */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  transition: 0.2s;
+  /* ! */
+}
+
+.key:hover {
+  background-color: lightgray;
+}
+
+.key.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.key .two-value {
+  width: 100%;
+  text-align: center;
+}
+
+.fn-key {
+  width: 80px;
+}
+
+.space-key {
+  width: 420px;
+}
+
+.back-space-key {
+  width: 130px;
+}
+
+.tab-key {
+  width: 95px;
+}
+
+.back-slash-key {
+  width: 95px;
+}
+
+.caps-lock-key {
+  width: 110px;
+}
+
+.left-shift-key {
+  width: 145px;
+}
+
+.enter-key {
+  width: 150px;
+}
+
+.right-shift-key {
+  width: 185px;
+}
+
+.menu {
+  /* ! */
+  display: flex;
+}
+
+.switch {
+  position: relative;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: gray;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+/* ! */
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.5s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: black;
+}
+
+input:checked + .slider::before {
+  /* ! */
+  transform: translateX(26px);
+}
+
+.select-box {
+  position: relative;
+  margin-left: 60px;
+  height: 34px;
+}
+
+.select-box select {
+  /* ! */
+  font-size: 0.9rem;
+  /* ! */
+  padding: 2px 5px;
+  height: 34px;
+  width: 200px;
+}
+
+.input-group {
+  margin: 100px 0px;
+}
+
+.input {
+  border: none;
+  border-bottom: 2px solid lightgrey;
+  width: 1050px;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+  display: block;
+}
+
+.error-message {
+  color: #cc0033;
+  font-size: 30px;
+  line-height: 30px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.input-group .error-message {
+  display: none;
+}
+
+.error input {
+  border-bottom: 2px solid red;
+}
+
+.error .error-message {
+  display: block;
+}
