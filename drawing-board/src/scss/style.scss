@@ -1,0 +1,150 @@
+$fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  user-select: none;
+  // !
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  width: 955px;
+  margin: auto;
+  flex-wrap: wrap;
+  top: 100px;
+  position: relative;
+
+  .canvas {
+    border: 2px solid black;
+  }
+
+  .toolbar {
+    width: 50px;
+    height: 804px;
+    background: #535353;
+
+    .tool {
+      height: 45px;
+      width: 50px;
+      border: 1px solid transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      background: #535353;
+      color: #dcdcdc;
+      border-radius: 5px;
+      transition: 0.2s;
+
+      &:hover {
+        border-radius: 5px;
+        background-color: #383838;
+        border-color: #636363;
+        transition: 0.2s;
+      }
+
+      &.active {
+        background-color: #383838;
+        border-color: #636363;
+      }
+
+      .fas {
+        font-size: 25px;
+      }
+    }
+  }
+
+  .brushPanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #535353;
+    left: 50px;
+    height: 100px;
+    width: 350px;
+    position: relative;
+  }
+
+  .imgNav {
+    height: 180px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #535353;
+    top: 15px;
+    right: 15px;
+    margin-left: auto;
+    border-radius: 3px;
+  }
+}
+
+.brushPanel.hide,
+.imgNav.hide {
+  display: none;
+}
+
+.container {
+  .toolbar .dl a#download {
+    color: #dcdcdc;
+  }
+
+  .brushPanel {
+    label {
+      color: #dcdcdc;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .brushSizeLabel {
+      position: relative;
+      left: -40px;
+    }
+  }
+
+  .toolbar input.tool[type="color"] {
+    height: 45px;
+    width: 50px;
+    margin: auto;
+  }
+
+  .brushPanel {
+    input.brushSize[type="range"] {
+      width: 200px;
+      position: relative;
+      left: -40px;
+    }
+
+    .brushSizePreviewContainer {
+      label.brushSizePreview {
+        width: 10px;
+        height: 10px;
+        // !
+        border-radius: 50%;
+        background: #e53935;
+      }
+
+      position: absolute;
+      right: 0;
+      background: inherit;
+      width: 100px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .imgNav .navImg {
+    width: 180px;
+    height: 160px;
+    background-color: white;
+  }
+}
