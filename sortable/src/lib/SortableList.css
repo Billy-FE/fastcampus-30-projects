@@ -1,0 +1,21 @@
+ul,
+li {
+  list-style-type: none;
+}
+
+.sortable-list .item {
+  padding: 10px 0;
+  border-top: 2px solid transparent;
+}
+
+.sortable-list .item * {
+  pointer-events: none;
+}
+
+.sortable-list .item.dragstart {
+  opacity: 0.5;
+}
+
+.sortable-list .item.dragover {
+  border-top-color: green;
+}
