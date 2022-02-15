@@ -1,0 +1,29 @@
+@import "../../variables.scss";
+
+.progress-area {
+
+  height: 7px;
+  width: 100%;
+  border-radius: 50px;
+  background: #e6e6e6;
+  cursor: pointer;
+  
+  .music-timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2px;
+    span {
+      font-size: 15px;
+    }
+  }
+
+  .progress-bar {
+    height: inherit;
+    width: 0%;
+    position: relative;
+    border-radius: inherit;
+    background: $blue;
+  }
+}
+
