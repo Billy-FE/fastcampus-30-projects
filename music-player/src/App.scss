@@ -1,0 +1,10 @@
+@import "./variables.scss";
+.container {
+  width: 500px;
+  padding: 25px 30px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+  border: 2px solid black;
+  background: $white;
+}
