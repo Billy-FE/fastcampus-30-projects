@@ -1,0 +1,32 @@
+.memo-container {
+  float: left;
+  min-width: 250px;
+  min-height: 300px;
+  margin: 0;
+  padding: 0 0 26px;
+  overflow: hidden;
+  font-size: 1em;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: #fde92f;
+  border: 1px solid #ccc;
+  box-sizing: content-box;
+  resize: both;
+  position: absolute;
+  .menu {
+    height: 25px;
+    padding: 0 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  .memo-text-area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: none;
+    resize: none;
+    background: #fdf48a;
+    margin: 0;
+    user-select: auto;
+    padding: 10px;
+  }
+}
