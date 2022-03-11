@@ -1,0 +1,67 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  height: 700px;
+  width: 960px;
+  flex-wrap: wrap;
+  border-radius: 25px;
+  border: 2px solid #ced1d4;
+  box-shadow: 0 26px 52px 0 rgba(0, 0, 0, 0.2), 0 16px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.container .weather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  margin: auto;
+}
+
+.container .temperature-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  justify-content: space-evenly;
+}
+
+.container .extra-info {
+  display: flex;
+  align-items: center;
+  font-size: 100px;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 2px solid #ced1d4;
+}
+
+.container .extra-info .extra-info-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+}
+
+.container .extra-info .extra-info-text {
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+}
+
+.swiper:hover .swiper-button-next::after {
+  display: block;
+}
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper:hover .swiper-button-prev::after {
+  display: block;
+}
+.swiper-button-prev::after {
+  display: none;
+}
