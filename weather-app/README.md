@@ -6,9 +6,9 @@ npm install 한후 package.json에 입력된 scripts를 참고하여 dev server�
 
 
 # ⚠️ 주의사항 ⚠️
-API KEY는 front코드에서 가지고 있거나, github 업로드 하게 되면 외부인에게 탈취될수 있습니다!!
+API KEY는 front코드 에서 가지고 있거나, github 업로드 하게 되면 외부인에게 탈취될수 있습니다!!
 
-현 프로젝트에서 사용되는 API KEY는 강의 목적으로 무료 plan의 사용하고 있어서 문제 될일이 없겠지만,
+현 프로젝트에서 사용되는 API KEY는 강의 목적으로 무료 plan을 사용하고 있어서 문제 될일이 없겠지만,
 
 추후 유료 plan의 API KEY 사용시 외부인에게 탈취되면 문제가 될수 있습니다.
 
