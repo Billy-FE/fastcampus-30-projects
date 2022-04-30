@@ -1,0 +1,31 @@
+{
+  "rules": {
+    "channels": {
+      ".read": "auth != null",
+      "$channelId": {
+        ".write": "auth != null"
+      }
+    },
+    "messages": {
+      "$channelId": {
+        ".read": "auth != null",
+        ".indexOn": "timestamp",
+        "$messageId": {
+          ".write": "auth != null"
+        }
+      }
+    },
+    "users": {
+      ".read": "auth != null",
+      "$uid": {
+        ".write": "auth != null && auth.uid === $uid",
+        "theme":{
+          ".read": "auth != null",
+          "$themeId":{
+            ".write": "auth != null"
+          }
+        }
+      }
+    }
+  }
+}

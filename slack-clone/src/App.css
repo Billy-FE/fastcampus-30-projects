@@ -1,0 +1,22 @@
+.no-scroll *::-webkit-scrollbar {
+    display: none;
+}
+
+.theme-main {
+    width: 13px;
+    height: 26px;
+}
+
+.theme-sub {
+    width: 13px;
+    height: 26px;
+}
+
+.theme-box {
+    cursor: pointer;
+    overflow: hidden;
+    width: 26px;
+    height: 26px;
+    border-radius: 3px;
+    display: flex;
+}
